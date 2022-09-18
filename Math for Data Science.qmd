@@ -1,0 +1,19 @@
+---
+title: "Math for Data Science"
+format: html
+---
+
+
+
+
+
+```{r}
+library(data.table)
+
+
+```
+
+
+
+
+
