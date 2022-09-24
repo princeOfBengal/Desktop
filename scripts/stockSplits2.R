@@ -7,7 +7,6 @@ stockSplits2 <- function(ticker = "MSFT"){
   suppressMessages(library(bizdays))
   suppressMessages(library(lubridate))
   suppressMessages(library(rvest))
-  closeAllConnections()
   ticker <- as.character(ticker)
   ticker <- toupper(ticker)
   
@@ -65,7 +64,6 @@ stockSplits2 <- function(ticker = "MSFT"){
   
   dates$ticker <- ticker
   
-  closeAllConnections()
   if(nrow(dates) == 0){
     return("no stock split history")
   }else{
